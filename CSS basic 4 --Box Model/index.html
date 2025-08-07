@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+
+        .box1 {
+            color: black;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box
+                /*gays this mens that when we apply box sizing border box gays...we get to adjust our element's overall height to 200px gays..if we don't use it gays we cooked.*/
+        }
+
+        .box2 {
+            color: mediumvioletred;
+            color: black;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid rgb(0, 0, 0);
+            height: 200px;
+            box-sizing: border-box
+        }
+
+        /*Margin collapse says that when two margins are overlapped..then the margin with maximum value will be considered...so cute*/
+        .marginclass {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a papa again lol this is crazy..This time my son is a box.
+    </div>
+    <div class="box box2">
+        Omg i think i should control my emotions or else i'll have a box factory.
+    </div>
+    <h1>Fig representing margin collapse:-</h1>
+    <img src="Margin collapse.jpeg" alt="" class="marginclass">
+</body>
+
+</html>
