@@ -1,0 +1,35 @@
+/*Class selector*/
+.happydiv{
+    background-color: aqua;
+}
+/*Id selector*/
+#sassydiv{
+    background-color: black;
+    color: red;
+}
+/*Child selectors*/
+div > p{
+    background-color: pink;
+}
+/*Descendant selectors*/
+.papadiv p{
+    background-color: pink;
+}
+/*Universal selector*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Pseudo Selectors*/
+a:visited{
+    color: deeppink;
+}
+a:link{
+    color:black
+}
+a:active{
+    color: crimson;
+}
+a:hover{
+    background-color: palevioletred;
+}
