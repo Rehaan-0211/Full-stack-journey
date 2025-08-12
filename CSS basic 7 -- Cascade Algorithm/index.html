@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caascade Algorithm</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red !important;/*Using important we can even over ride inline CSS*/
+        }
+        .cpurple{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="yellow cred cpurple">Omg they be fighitng for me.</h1>
+    <br>
+    <h2>Cascade Algorithm</h2>
+    <p>
+        Jokes apart lets discuss how this Cascade Algorithm actually works..it has for points
+        <ol>
+            <li>Position and order of appearance</li>
+            <li>Specificity </li>
+            <li>Origin</li>
+            <li>Importance</li>
+        </ol>
+        Lets discuss about them breifly.
+    </p>
+    <h3>Position</h3>
+    <p> When there are same type of selectors present...then the selector which is present in the end most part of the code is considered for styling as the other selectors are over ridden by the end selectors
+        <br>
+        Ex:- Class 1 -> Class 2 -> Class 3.
+        <br>
+        Class 3 color or code will be used.
+    </p>
+    <h3>Specificity</h3>
+    <div>Specificity is considered in the following order
+        <p style="font-weight: bold;">Inline CSS->ID Selectors->Class or Attribute Selector->Element Selector->Universal Selector</p>
+    </div>
+    <h4>Specificity Calculation</h4>
+    <ol>
+        <li>Universal Selector > 0</li>
+        <li>Element selector or pseudo elements > 1</li>
+        <li>Class/Attribute selector or pseudo classes > 10</li>
+        <li>ID Selectors > 100</li>
+        <li>Inline CSS> 1000</li>
+        <li>Important> 10000</li>
+    </ol>
+</body>
+</html>
