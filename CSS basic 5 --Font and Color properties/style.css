@@ -1,0 +1,63 @@
+.fonts{
+    text-align: center;
+}
+h1{
+    text-indent:50px;
+    text-transform: capitalize;
+}
+
+.font1 {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 90px;
+    letter-spacing: 30px;
+
+}
+
+.font2 {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 90px;
+}
+
+.font3 {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 90px;
+}
+
+.font4 {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 90px;
+}
+
+.font5 {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 90px;
+}
+
+.font6 {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 90px;
+}
+.dummy{
+    text-overflow: clip;
+    border: 2px solid red;
+    width: 25px;
+    overflow:scroll;
+}
