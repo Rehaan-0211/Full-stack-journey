@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 35px;
+            box-shadow: 5px 5px 15px 5px #ef0e0e; 
+        }
+        .text-element {
+             text-shadow: 2px 2px 4px #1de3ed; 
+            outline:2px solid blue;
+            border: 2px solid black;
+            outline-offset: 3px;
+            border-radius: 10px;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        i am a box
+    </div>
+    <br>
+    <br>
+    <br>
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fugiat error ut natus illum quos a, tempora sit asperiores maiores dolorum eum esse, deserunt exercitationem nam sequi ipsam vero, unde rem dolore inventore itaque animi voluptatibus? Voluptatum laborum quos, odit ut dolorum enim qui architecto quo explicabo magni ea nulla quia debitis aliquid. Obcaecati facilis atque, animi facere tenetur rerum, ipsum nisi eaque, voluptates ea quasi fugit ducimus in ad aliquam culpa assumenda provident enim distinctio. Autem deleniti beatae magni quod libero dolorem. Iusto neque quo, quis natus ex harum dolorum ipsam quisquam accusamus, quae aspernatur voluptate reprehenderit? Dolorum labore aperiam voluptate dignissimos, magni tempora. Ad, sequi incidunt blanditiis saepe impedit tenetur quo animi vero atque esse rerum aperiam maiores. Possimus iste, pariatur reprehenderit commodi quisquam odit harum itaque molestias et animi nulla dignissimos sapiente sit dolor sequi, aut ad iure sunt accusamus, magni deleniti. Voluptatibus dolor odit soluta dignissimos itaque earum atque, cum quam optio quod deserunt, consequatur, est sunt molestias ducimus alias maiores eos saepe. Eius voluptatem ullam aliquid voluptates. Deleniti reiciendis atque, quisquam molestiae reprehenderit eius, natus repudiandae eveniet repellat sed unde facere distinctio quas. Modi voluptates alias saepe fugiat dolor repudiandae distinctio quod ab dolorum neque facilis recusandae quaerat quibusdam laudantium, sint dignissimos magni exercitationem nemo? Voluptatum molestias recusandae architecto natus dolorem. Numquam sapiente quae corrupti ea nemo asperiores, blanditiis eveniet accusamus voluptate iure earum distinctio pariatur accusantium? Molestias animi, ipsa est laborum architecto doloribus reprehenderit veniam iusto esse veritatis, suscipit quam, hic similique aspernatur expedita nostrum optio obcaecati! Aliquid quod in doloremque laboriosam accusamus illo sunt, architecto dolore quaerat cumque earum dignissimos fugiat provident repellendus? Quod, maiores dolor obcaecati aut id corporis hic dicta. Porro quod pariatur nihil soluta ducimus repellendus alias maxime optio repellat esse! Officiis sunt accusamus exercitationem, facere fugit eligendi quasi dolore.
+    </p>
+</body>
+<!-- box-shadow: h-offset v-offset blur spread color inset;<--FORMAT
+    h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+    blur: The larger the value, the blurrier the shadow.
+    spread: Expands or shrinks the shadow size.
+    color: Defines the shadow color.
+    inset: Makes the shadow inner.
+    TEXT SHADOWS
+    text-shadow: h-offset v-offset blur color; SYNTAX
+    Example: .text-element { text-shadow: 2px 2px 4px #888888; } 
+    
+    OUTLINES
+    outline: width style color;SYNTAX
+
+width: Sets the outline width.
+style: Determines the style of the outline such as solid, dotted, or dashed.
+color: Sets the outline color.
+Here is an example:
+
+.button-element:focus { outline: 2px solid blue; }
+--------------------------------------------------------------------------
+Differences between Outlines and Borders:
+While both can visually appear similar, outlines differ from borders in a few ways:
+
+Position: Outlines don't take up space; they're drawn around the element, outside of any border.
+Offset: Using the outline-offset property, you can set the space between an outline and the edge or border of an element.
+Width: Borders can have varying widths on different sides, outlines have a uniform width.
+Rounded Corners: Borders can have rounded corners using border-radius, while outlines generally cannot.
+-->
+</html>
