@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing the card given in the folder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        /*Card container part*/
+        .honoured {
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 15px;
+            /*This is the reason why the border looks curvy*/
+            overflow: hidden;
+            /* Ensures content stays inside rounded corners */
+            box-shadow: 0 4px 10px rgb(255, 3, 3);
+            /*The numbers before the color are the shadow offsets and blur. They are in this order:
+0 → Horizontal offset (X-axis)
+Positive value: shadow moves right
+Negative value: shadow moves left
+Here it’s 0, so the shadow is directly under the element horizontally.
+4px → Vertical offset (Y-axis)
+Positive value: shadow moves down
+Negative value: shadow moves up
+Here it’s 4px, so the shadow is slightly below the card.
+10px → Blur radius
+Higher number = more blurred and spread-out shadow
+Lower number = sharper shadow
+Here 10px gives a soft, subtle shadow around the card.*/
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 50px auto;
+            /*
+50px → Top and Bottom margin
+This pushes the card 50 pixels away from the top and bottom of whatever is above or below it.
+auto → Left and Right margin
+auto tells the browser to evenly distribute space on the left and right, effectively centering the card horizontally on the page.*/
+            background-color: #201a1a
+        }
+
+        /*Image styling*/
+        .honoured.image img {
+            width: 100%;
+            height: 200px;
+            height: auto;
+            /* height: auto; 
+ Ensures the image keeps its original aspect ratio.
+Without this, the image might get squished or stretched vertically when width changes.*/
+            display: block;
+            /*display: block;
+By default, <img> is inline (like text).
+Inline images have small gaps below them, which can mess up layout.
+block removes that gap and makes it behave like a normal block element. */
+            object-fit: cover;
+        }
+
+        .info {
+            display: inline-block;
+            /* So inline-block = best of both worlds:
+Your .info badges sit next to each other (inline)
+But you can still add padding, background, margin, border-radius (block features) */
+
+            padding: 5px 10px;
+            /* space around text */
+            margin: 5px 5px 10px 0;
+            /* small spacing between badges */
+            background-color: #431717;
+            /* bright blue */
+            color: #ff0a0a;
+            /* text color */
+            border-radius: 5px;
+            /* rounded edges */
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .info:hover{
+            background-color: black;
+        }
+        .heading{
+            font-size: 1.4rem;
+            text-align: center;
+            margin: 10px 0;
+            color: bisque
+        }
+
+        .para{
+            font-family: 'Creepster', cursive;
+            padding: 0 15px 10px 15px;
+            font-size: 0.95rem;
+            color: #962121;
+            text-align: justify;
+        }
+
+        .readmore{
+            display: block;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #e8805a;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .readmore:hover {
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="honoured">
+        <div class="image">
+            <img src="studymaterial.jpeg" alt=" Adolf Hitler">
+        </div>
+        <span class="info">
+            No. of people killed
+        </span>
+        <span class="info">
+            Bounty
+        </span>
+        <h2 class="heading">The Myth The Legend</h2>
+        <p class="para">
+            Shadows of terror clung to his name. Hitler orchestrated unimaginable horrors, leaving millions in fear and death. His rise spread darkness across nations, twisting minds and shattering lives. Echoes of his cruelty haunt history—an unholy legacy of blood, fear, and a world scarred by relentless, cold-blooded evil.
+        </p>
+        <div class="readmore">
+            Read More
+        </div>
+    </div>
+
+</body>
+
+</html>
